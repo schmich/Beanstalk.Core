@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Beanstalk.Core</id>
+    <version>1.0.0</version>
+    <title>Beanstalk.Core</title>
+    <authors>voids</authors>
+    <owners>voids</owners>
+    <licenseUrl>https://raw.githubusercontent.com/voids/Beanstalk.Core/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/voids/Beanstalk.Core</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Beanstalkd client for .net core</description>
+    <releaseNotes>first package</releaseNotes>
+    <copyright>Copyright voids 2019</copyright>
+    <tags>beanstalkd</tags>
+  </metadata>
+</package>

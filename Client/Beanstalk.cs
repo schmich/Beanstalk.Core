@@ -23,19 +23,14 @@ namespace Beanstalk.Core.Client {
             _port = port;
         }
 
-        public async Task<NetworkStream> GetStream() {
+        private async Task<NetworkStream> GetStream() {
             if (_client != null && _client.Connected) return _client.GetStream();
             _client = new TcpClient();
-            Console.WriteLine("Connecting...");
             await _client.ConnectAsync(_host, _port);
-            Console.WriteLine("Connected...");
             return _client.GetStream();
         }
 
-        public void Dispose() {
-            Console.WriteLine("Disconnecting...");
-            _client.Dispose();
-        }
+        public void Dispose() { _client.Dispose(); }
 
         public async Task<ulong> Put(string data, TimeSpan delay, uint priority, TimeSpan ttr) {
             return await new Command(await GetStream())

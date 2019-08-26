@@ -3,13 +3,6 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <Title>Beanstalk.Core</Title>
-        <Authors>voids</Authors>
-        <Description>Beanstalkd client for .net core</Description>
-        <PackageProjectUrl>https://github.com/voids/Beasntalk.Core</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/voids/Beasntalk.Core</RepositoryUrl>
-        <PackageVersion>0.1</PackageVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageLicenseUrl>https://github.com/voids/Beanstalk.Core/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
 </Project>
