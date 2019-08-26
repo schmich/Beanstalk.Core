@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Beanstalk.Core</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Beanstalk.Core</title>
     <authors>voids</authors>
     <owners>voids</owners>
@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/voids/Beanstalk.Core</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Beanstalkd client for .net core</description>
-    <releaseNotes>first package</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright voids 2019</copyright>
-    <tags>beanstalkd</tags>
+    <tags>beanstalkd beanstalk</tags>
   </metadata>
 </package>
