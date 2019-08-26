@@ -7,14 +7,14 @@ Beanstalkd client for .net core
 
         static async Task Main(string[] args) {
             await Task.Run(async () => {
-                using (var client = new Beanstalk.Core.Client.Beanstalk("127.0.0.1", 11300)) {
+                using (var client = new BeanstalkConnection("127.0.0.1", 11300)) {
                     await client.Use("mytube");
                     for (var i = 0; i < 10; i++) {
                         await client.Put($"Mission{i}", TimeSpan.FromSeconds(2 * i), 1024, TimeSpan.FromMinutes(1));
                     }
                 }
             });
-            using (var client = new Beanstalk.Core.Client.Beanstalk("127.0.0.1", 11300)) {
+            using (var client = new BeanstalkConnection("127.0.0.1", 11300)) {
                 await client.Watch("mytube");
                 while (true) {
                     var job = await client.Reserve(TimeSpan.FromMinutes(5));
