@@ -2,9 +2,9 @@ using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace Beanstalk.Core.Client {
+namespace Beanstalk.Core {
 
-    public class Beanstalk : IDisposable {
+    public class BeanstalkConnection : IDisposable {
 
         private static readonly TimeSpan DefaultDelay = TimeSpan.Zero;
 
@@ -18,7 +18,7 @@ namespace Beanstalk.Core.Client {
 
         private TcpClient _client;
 
-        public Beanstalk(string host, ushort port) {
+        public BeanstalkConnection(string host, ushort port) {
             _host = host;
             _port = port;
         }

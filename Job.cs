@@ -1,6 +1,6 @@
 using System;
 
-namespace Beanstalk.Core.Client {
+namespace Beanstalk.Core {
 
     public class Job : IJob {
 

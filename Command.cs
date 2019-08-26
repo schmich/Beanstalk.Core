@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Beanstalk.Core.Client {
+namespace Beanstalk.Core {
 
     public class Command : IConnection {
 

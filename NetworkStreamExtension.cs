@@ -3,7 +3,7 @@ using System.IO;
 using System.Net.Sockets;
 using System.Text;
 
-namespace Beanstalk.Core.Client {
+namespace Beanstalk.Core {
 
     public static class NetworkStreamExtension {
 
