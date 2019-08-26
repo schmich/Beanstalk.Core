@@ -9,6 +9,7 @@
         <RepositoryUrl>https://github.com/voids/Beasntalk.Core</RepositoryUrl>
         <PackageVersion>0.1</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseUrl>https://github.com/voids/Beanstalk.Core/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
 </Project>
