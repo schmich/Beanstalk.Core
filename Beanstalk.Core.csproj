@@ -5,8 +5,4 @@
         <Title>Beanstalk.Core</Title>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Client" />
-    </ItemGroup>
-
 </Project>
