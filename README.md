@@ -3,7 +3,7 @@ Beanstalkd client for .net core
 
 ### install
 ```bash
-dotnet add package Beanstalk.Core --version 1.1.0
+dotnet add package Beanstalk.Core
 ```
 
 ### example
