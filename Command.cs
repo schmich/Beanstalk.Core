@@ -34,7 +34,6 @@ namespace Beanstalk.Core {
 
         public async Task<ulong> Put(uint priority, uint delay, uint ttr, string data) {
             var len = Encoding.Default.GetByteCount(data);
-            Console.WriteLine("Data {0} Length: {1}", data, len);
             _command = Encoding.Default.GetBytes($"put {priority} {delay} {ttr} {len}\r\n{data}\r\n");
             _checkers.Add("BURIED", resp => throw new BeanstalkException(resp));
             _checkers.Add("EXPECTED_CRLF", resp => throw new BeanstalkException(resp));
