@@ -96,7 +96,7 @@ namespace Beanstalk.Core {
 
         public async Task<IJob> PeekDelayed() { return await new Command(await GetStream()).PeekDelayed(); }
 
-        public async Task<IJob> PeekBuried() { return await new Command(await GetStream()).PeekDelayed(); }
+        public async Task<IJob> PeekBuried() { return await new Command(await GetStream()).PeekBuried(); }
 
         public async Task<uint> Kick(uint bound) { return await new Command(await GetStream()).Kick(bound); }
 
