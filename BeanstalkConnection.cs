@@ -30,7 +30,7 @@ namespace Beanstalk.Core {
             return _client.GetStream();
         }
 
-        public void Dispose() { _client.Dispose(); }
+        public void Dispose() { _client?.Dispose(); }
 
         public async Task<ulong> Put(string data, TimeSpan delay, uint priority, TimeSpan ttr) {
             return await new Command(await GetStream())
